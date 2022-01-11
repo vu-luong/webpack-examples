@@ -1,0 +1,36 @@
+Arguments: 
+  /usr/bin/node /usr/share/yarn/bin/yarn.js init
+
+PATH: 
+  /usr/share/swift/usr/bin:/opt/gradle/gradle-6.7.1/bin:/home/vuluong/anaconda3/bin:/home/vuluong/anaconda3/condabin:/opt/gradle/gradle-7.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/vuluong/.dotnet/tools:/usr/lib/dart/bin:/home/vuluong/Android/Sdk/emulator:/home/vuluong/Android/Sdk/tools:/home/vuluong/Android/Sdk/tools/bin:/home/vuluong/Android/Sdk/platform-tools:/home/vuluong/Work/youngmonkeys/dev/ezyplatform/sdk/bin
+
+Yarn version: 
+  1.22.15
+
+Node version: 
+  14.18.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (/usr/share/yarn/lib/cli.js:137145:13)
+      at Interface.emit (events.js:400:28)
+      at Interface._ttyWrite (readline.js:1001:16)
+      at ReadStream.onkeypress (readline.js:265:10)
+      at ReadStream.emit (events.js:400:28)
+      at emitKeys (internal/readline/utils.js:358:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1270:36)
+      at ReadStream.emit (events.js:400:28)
+      at addChunk (internal/streams/readable.js:293:12)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
