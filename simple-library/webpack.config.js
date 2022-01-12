@@ -5,8 +5,8 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: "simlib.js",
-        // library: "simlib",
-        libraryTarget: "umd",
+        library: "simlib",
+        // libraryTarget: "umd",
         clean: true
     },
     module: {

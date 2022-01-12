@@ -6,17 +6,8 @@
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
-(function webpackUniversalModuleDefinition(root, factory) {
-	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory();
-	else if(typeof define === 'function' && define.amd)
-		define([], factory);
-	else {
-		var a = factory();
-		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
-	}
-})(self, function() {
-return /******/ (() => { // webpackBootstrap
+var simlib;
+/******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
@@ -26,7 +17,7 @@ return /******/ (() => { // webpackBootstrap
   \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction addDOMContent(content) {\n  var node = document.createElement(\"h1\");\n  node.innerText = content;\n  document.body.appendChild(node);\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (addDOMContent);\n\n//# sourceURL=webpack://simple-library/./src/addDOMContent.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction addDOMContent(content) {\n  var node = document.createElement(\"h1\");\n  node.innerText = content;\n  document.body.appendChild(node);\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (addDOMContent);\n\n//# sourceURL=webpack://simlib/./src/addDOMContent.js?");
 
 /***/ }),
 
@@ -36,7 +27,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction capital(string) {\n  var capitalizedString = string.substring(0, 1).toUpperCase() + string.substring(1);\n  return capitalizedString;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (capital);\n\n//# sourceURL=webpack://simple-library/./src/capital.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction capital(string) {\n  var capitalizedString = string.substring(0, 1).toUpperCase() + string.substring(1);\n  return capitalizedString;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (capital);\n\n//# sourceURL=webpack://simlib/./src/capital.js?");
 
 /***/ }),
 
@@ -46,7 +37,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"capital\": () => (/* reexport safe */ _capital__WEBPACK_IMPORTED_MODULE_0__[\"default\"]),\n/* harmony export */   \"addDOMContent\": () => (/* reexport safe */ _addDOMContent__WEBPACK_IMPORTED_MODULE_1__[\"default\"])\n/* harmony export */ });\n/* harmony import */ var _capital__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./capital */ \"./src/capital.js\");\n/* harmony import */ var _addDOMContent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./addDOMContent */ \"./src/addDOMContent.js\");\n\n\n\n\n//# sourceURL=webpack://simple-library/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"capital\": () => (/* reexport safe */ _capital__WEBPACK_IMPORTED_MODULE_0__[\"default\"]),\n/* harmony export */   \"addDOMContent\": () => (/* reexport safe */ _addDOMContent__WEBPACK_IMPORTED_MODULE_1__[\"default\"])\n/* harmony export */ });\n/* harmony import */ var _capital__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./capital */ \"./src/capital.js\");\n/* harmony import */ var _addDOMContent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./addDOMContent */ \"./src/addDOMContent.js\");\n\n\n\n\n//# sourceURL=webpack://simlib/./src/index.js?");
 
 /***/ })
 
@@ -111,8 +102,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
+/******/ 	simlib = __webpack_exports__;
 /******/ 	
-/******/ 	return __webpack_exports__;
 /******/ })()
 ;
-});
